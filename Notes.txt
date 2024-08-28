@@ -1,0 +1,85 @@
+
+		// *** GO_desde_0 *** //
+		// ****************** //
+
+		// *** Inicio *** //
+		variables.Variables()
+		constantes.Constantes()
+		comentarios.Comentarios()
+		tipos.Tipos()
+		operadores.Operadores()
+		comparadores.Comparadores()
+		punteros.Punteros()
+		arrays.Arrays()
+		slices.Slices()
+		maps.Maps()
+		estructuras.Estructuras()
+
+		// *** Loop *** //
+		loopIf.LoopIf()
+		loopSwitch.LoopSwitch()
+		loopFor.LoopFor()
+		loopForRange.LoopForRange()
+
+		// *** Funciones *** //
+		basico.Basico()
+		avanzado.Avanzado()
+		especial.Especial()
+
+		// *** Paquetes *** //
+		paquetes.Paquete_01("Marlon")
+		paquetes.Paquete_02("Johao")
+		paquetes.Color()
+
+		// *** GO_P00 *** //
+		// ************** //
+
+		factura.Facturar()
+		interfaces.Interfaces()
+		tipo.Tipo()
+
+		// *** GO_MySQL *** //
+		// **************** //
+
+		database.Database()
+
+		// *** GO_Server *** //
+		// **************** //
+
+		servidorHTTP.SaludarExample(servidor.Edad, "Edad")
+		servidorHTTP.SaludarExample(servidor.Profesion, "Profesion")
+
+		servidorECHO1.ServerECHO() // http://localhost:8080/
+		servidorECHO1.ServerFiles() // http://localhost:8080/index.html
+		servidorECHO1.ServerString() // http://localhost:8080/html
+		servidorECHO1.ServerJSON() // http://localhost:8080/json
+
+		servidorECHO2.ServerInline() // http://localhost:8080/
+
+		servidorECHO3.ServerCertificate() // https://localhost
+		servidorECHO3.ServerRedirectPort() // http://localhost
+		servidorECHO3.ServerRedirectLink() // http://localhost/antiguo
+		servidorECHO3.ServerLOG() // http://localhost:8080/
+		servidorECHO3.ServerRecover() // http://localhost:8080/division?d=0
+
+
+		Funciona corriendo el ejemplo de ...Mi-Cliente-Prueba/main.go
+		para intentar acceder a esta data desde otro dominio (en este caso puerto)
+		ojo con el tema de las libreria /v4 no es compatible con el middelware CORS
+		---> servidorECHO3.ServerCORS() // http://localhost:8080/data
+
+		METODO GET! Con Body {"name": "marlon","password": "marlon"}
+		// http://localhost:8080/login
+		METODO GET! Con Header Authorization "Bearer token" de login
+		// http://localhost:8080/validate
+		---> servidorJwt.ServidorJWT()
+
+
+		METODO POST!
+		http://localhost:8080/login?username=marlon&password=marlon
+		METODO GET! Con Header Authorization "Bearer token" de login
+		http://localhost:8080/restricted
+		---> servidorECHO5.ServidorJWT_ECHO()
+
+		// GO_PostgreSQL: Ver en pgAdmin 4, base de datos PostgreSQL
+		execution.Execution()
